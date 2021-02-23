@@ -4,5 +4,6 @@ class Main():
     def __init__(self):
         pass
 
-    def StartUp(self):
-        pass
+
+if __name__ == '__main__':
+    StartUp = Main()
