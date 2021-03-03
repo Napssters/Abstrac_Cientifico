@@ -1,8 +1,9 @@
+#! usr/bin/env python
 from PyQt5 import QtWidgets, uic
 from Views import Summary as Sm
 import sys
 
-# Se crea la funcion para la ventana principal
+
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
