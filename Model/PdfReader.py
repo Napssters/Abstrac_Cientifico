@@ -19,14 +19,12 @@ class Reader():
         if(numpages > 8):
             for i in range(1, (numpages - 3)):
                 page = reader.getPage(i)
-                page_content += "\n" + page.extractText()
+                page_content += "\n" + self.trl.translate(page.extractText(), lang_tgt='en')
         else:
             for i in range(1, (numpages)):
                 page = reader.getPage(i)
-                page_content += "\n" + page.extractText()
+                page_content += "\n" + self.trl.translate(page.extractText(), lang_tgt='en')
 
-        page_content = self.trl.translate(page_content, lang_tgt='en')
-        print(page_content)
         article_text = page_content
         article_text = article_text.replace("[ edit ]", "")
         article_text = re.sub(r'\[[0-9]*\]', ' ', article_text)
@@ -68,4 +66,6 @@ class Reader():
         summary_sentences = heapq.nlargest(7, sentence_scores, key=sentence_scores.get)
 
         summary = ' '.join(summary_sentences)
+        tra = self.trl.translate(summary, lang_tgt='es')
+        print(tra)
         return summary
