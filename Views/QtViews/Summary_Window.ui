@@ -10,6 +10,18 @@
     <height>495</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>495</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>495</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Summary</string>
   </property>
@@ -57,8 +69,21 @@ p, li { white-space: pre-wrap; }
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="text">
-    <string>Generar Abstract</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Images/BotonesSummary/AbstractBtn.png</normaloff>../Images/BotonesSummary/AbstractBtn.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>121</width>
+     <height>26</height>
+    </size>
    </property>
   </widget>
   <widget class="QPushButton" name="exportar">
@@ -76,8 +101,21 @@ p, li { white-space: pre-wrap; }
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
    <property name="text">
-    <string>Exportar Abstract</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Images/BotonesSummary/ExportarBtn.png</normaloff>../Images/BotonesSummary/ExportarBtn.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>121</width>
+     <height>26</height>
+    </size>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -110,6 +148,9 @@ p, li { white-space: pre-wrap; }
      <family>Sylfaen</family>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255, 0);

@@ -13,7 +13,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.SmView = Sm.SummaryView()
 
     def StartSummary(self):
+        self.hide()
+        self.SmView._isClose = False
         self.SmView.exec_()
+        if(self.SmView.isClose() == True):
+            self.show()
 
 
 def run():
