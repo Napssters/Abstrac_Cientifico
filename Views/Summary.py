@@ -3,7 +3,7 @@ from PyQt5 import QtWidgets, uic
 from Controller import Controlador as Ctd
 import sys
 
-class SummaryView(QtWidgets.QDialog) :
+class SummaryView(QtWidgets.QDialog):
     def __init__(self):
         super(SummaryView, self).__init__()
         uic.loadUi('Views/QtViews/Summary_Window.ui', self)

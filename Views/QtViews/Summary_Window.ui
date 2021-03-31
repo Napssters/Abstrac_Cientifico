@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Summary</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QTextEdit" name="summary">
    <property name="geometry">
     <rect>
@@ -183,11 +186,14 @@ color: rgb(255, 255, 255);</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>0</y>
      <width>111</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string/>
