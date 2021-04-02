@@ -105,3 +105,7 @@ class SummaryModel():
         summary = ' '.join(summary_sentences)
         summary = self.trl.translate(summary, lang_tgt='es')
         return summary
+
+    def TradEn(self, text):
+        texts = self.trl.translate(text, lang_tgt='en')
+        return texts

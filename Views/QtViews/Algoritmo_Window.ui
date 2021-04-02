@@ -95,7 +95,7 @@ color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>0</y>
+       <y>13</y>
        <width>381</width>
        <height>61</height>
       </rect>
@@ -575,7 +575,7 @@ H (diferente de) h</string>
       <bool>true</bool>
      </property>
      <property name="plainText">
-      <string>Se itera en la lista de oraciones para sumar la cantidad  los valores de  las frecuencias,  para así poder obtener un promedio.</string>
+      <string>Se itera en la lista de oraciones para sumar la cantidad  de  valores de  las frecuencias,  para así poder obtener un promedio.</string>
      </property>
      <property name="backgroundVisible">
       <bool>false</bool>
@@ -955,7 +955,7 @@ Se comprueba si la oración está en la lista, de lo contrario se agrega para as
       <bool>true</bool>
      </property>
      <property name="plainText">
-      <string>Se evalúan las frecuencias con el promedio para dar agrupar las oraciones en oraciones coherentes.</string>
+      <string>Se evalúan las frecuencias con el promedio para asi agrupar las oraciones en oraciones coherentes.</string>
      </property>
      <property name="backgroundVisible">
       <bool>false</bool>

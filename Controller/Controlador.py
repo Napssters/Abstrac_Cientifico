@@ -10,3 +10,6 @@ class Controlador():
         pdf = self.Reader.getPdf(file)
         numpages = self.Reader.getNumpage()
         return self.Summary.getSummary(pdf, numpages)
+
+    def DoSummaryEn(self, file):
+        return self.Summary.TradEn(file)

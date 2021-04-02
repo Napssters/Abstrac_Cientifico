@@ -9,11 +9,13 @@ class SummaryView(QtWidgets.QDialog):
         uic.loadUi('Views/QtViews/Summary_Window.ui', self)
         self.generated = self.findChild(QtWidgets.QPushButton, 'generar')
         self.exported = self.findChild(QtWidgets.QPushButton, 'exportar')
+        self.exporteden = self.findChild(QtWidgets.QPushButton, 'exportaren')
         self.inicio = self.findChild(QtWidgets.QPushButton, 'inicio')
         self.summary = self.findChild(QtWidgets.QTextEdit, 'summary')
         self.inicio.clicked.connect(self.setClose)
         self.generated.clicked.connect(self.LoadFile)
-        self.exported.clicked.connect(self.ExportFile)
+        self.exported.clicked.connect(self.ExportEsp)
+        self.exporteden.clicked.connect(self.ExportEn)
         self.controller = Ctd.Controlador()
         self.summarytext = ""
         self._isClose = False
@@ -25,16 +27,31 @@ class SummaryView(QtWidgets.QDialog):
         self.summary.setText(self.summarytext)
         self.summary.setReadOnly(True)
 
-    def ExportFile(self):
+    def ExportFile(self, text):
+        nextline = 0
+        summary = ""
         option = QtWidgets.QFileDialog.Options()
-        filess = QtWidgets.QFileDialog.getSaveFileName(self, 'Save File Window Title', 'default.txt', "All Files (*)", options=option)
+        filess = QtWidgets.QFileDialog.getSaveFileName(self, 'Save File Window Title', 'default.txt', "All Files (*)", options=option)    
         try:
             file = open(filess[0], "w")
-            summary = str (self.summarytext)
+            for i in range(len(text)):
+                summary += str(text[i])
+                if(text[i] == ' '):
+                    nextline += 1
+                if(nextline == 8):
+                    summary += str("\n")
+                    nextline = 0
             file.write(summary)
             file.close()
         except:
             pass
+    
+    def ExportEsp(self):
+        self.ExportFile(self.summarytext)
+
+    def ExportEn(self):
+        textEn = self.controller.DoSummaryEn(self.summarytext)
+        self.ExportFile(textEn)
 
     def setClose(self):
         self._isClose = True
