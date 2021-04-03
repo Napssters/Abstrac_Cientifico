@@ -25,6 +25,12 @@
   <property name="windowTitle">
    <string>Landing Page</string>
   </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="abstracts">
     <property name="geometry">
