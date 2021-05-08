@@ -20,9 +20,13 @@ class SummaryModel():
     def tokenize(self, text):
         tokenz = text.split()
         return tokenz
+    
+    def StopWords(self):
+        words = set(stopwords.words("english"))
+        return words
 
     def getSummary(self, pdf, numpages):
-        SW = set(stopwords.words("english"))
+        SW = self.StopWords()
         text = ""
         if(numpages > 8):
             for i in range(1, (numpages - 3)):

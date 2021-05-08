@@ -54,6 +54,7 @@ class SummaryView(QtWidgets.QDialog):
         self.ExportFile(textEn)
 
     def setClose(self):
+        self.summary.setText("")
         self._isClose = True
         self.isClose()
 

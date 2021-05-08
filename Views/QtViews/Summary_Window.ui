@@ -258,6 +258,34 @@ color: rgb(255, 255, 255);</string>
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255, 0);
+font: 12pt &quot;Sylfaen&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Images/marca_UTP.png</normaloff>../Images/marca_UTP.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>125</width>
+     <height>125</height>
+    </size>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

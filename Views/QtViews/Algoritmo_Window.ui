@@ -80,7 +80,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>-180</y>
       <width>750</width>
       <height>1800</height>
      </rect>
@@ -220,22 +220,6 @@ EL algoritmo a usar, es un algoritmo muy sencillo que se basa en descomponer el 
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>260</y>
-       <width>295</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../Images/Algoritmo/a1.PNG</pixmap>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
@@ -330,56 +314,6 @@ EL algoritmo a usar, es un algoritmo muy sencillo que se basa en descomponer el 
      </property>
      <property name="pixmap">
       <pixmap>../Images/Algoritmo/a7.PNG</pixmap>
-     </property>
-    </widget>
-    <widget class="QPlainTextEdit" name="plainTextEdit_2">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>390</x>
-       <y>230</y>
-       <width>321</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Sylfaen</family>
-       <pointsize>10</pointsize>
-       <kerning>true</kerning>
-      </font>
-     </property>
-     <property name="cursor" stdset="0">
-      <cursorShape>ArrowCursor</cursorShape>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="undoRedoEnabled">
-      <bool>true</bool>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-     <property name="plainText">
-      <string>Se crea el stopwords con las palabras en ingles para que el algoritmo sea más eficiente, el propósito del stopwords es simplemente eliminar palabras vacías, como lo son: am, is o it</string>
-     </property>
-     <property name="backgroundVisible">
-      <bool>false</bool>
-     </property>
-     <property name="centerOnScroll">
-      <bool>false</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -632,19 +566,6 @@ H (diferente de) h</string>
      </property>
      <property name="centerOnScroll">
       <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_18">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>270</y>
-       <width>21</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>&lt;{=</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_19">
@@ -1014,6 +935,47 @@ Se comprueba si la oración está en la lista, de lo contrario se agrega para as
      </property>
      <property name="text">
       <string>=}&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>1690</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 0);
+font: 12pt &quot;Sylfaen&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../Images/marca_UTP.png</normaloff>../Images/marca_UTP.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>125</width>
+       <height>125</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="paso1">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>230</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Paso 1</string>
      </property>
     </widget>
    </widget>

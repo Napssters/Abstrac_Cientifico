@@ -13,3 +13,6 @@ class Controlador():
 
     def DoSummaryEn(self, file):
         return self.Summary.TradEn(file)
+
+    def getStopWord(self):
+        return self.Summary.StopWords()
