@@ -29,7 +29,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Paso 1</string>
+   <string>Paso 2</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255, 255);</string>
@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>320</x>
      <y>60</y>
-     <width>131</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -127,75 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Stop Words</string>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit_2">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>210</y>
-     <width>295</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Sylfaen</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-     <kerning>true</kerning>
-    </font>
-   </property>
-   <property name="cursor" stdset="0">
-    <cursorShape>ArrowCursor</cursorShape>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="undoRedoEnabled">
-    <bool>true</bool>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-   <property name="plainText">
-    <string>Se  crea  el  stopwords  con  las palabras   en ingles    para   que   el   algoritmo   sea   más eficiente,   el  propósito   del   stopwords  es simplemente eliminar palabras vacías, como lo son: am, is o it, etc.</string>
-   </property>
-   <property name="backgroundVisible">
-    <bool>false</bool>
-   </property>
-   <property name="centerOnScroll">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>140</y>
-     <width>295</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../Images/Algoritmo/a1.PNG</pixmap>
+    <string>Tokenización</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">
@@ -226,7 +158,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../Images/BotonesPasos/StopWordBtn.png</normaloff>../Images/BotonesPasos/StopWordBtn.png</iconset>
+     <normaloff>../Images/BotonesPasos/TokenizarBtn.png</normaloff>../Images/BotonesPasos/TokenizarBtn.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -272,7 +204,7 @@ color: rgb(255, 255, 255);</string>
     </size>
    </property>
   </widget>
-  <widget class="QTextEdit" name="stopwords">
+  <widget class="QTextEdit" name="contenedor">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -328,16 +260,83 @@ color: rgb(255, 255, 255);</string>
     <string>Algoritmo</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>296</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Images/Algoritmo/a2.PNG</pixmap>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>296</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sylfaen</family>
+     <pointsize>10</pointsize>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="undoRedoEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>Se realiza la tokenizacion sobre el texto; en este caso el artículo de investigación, seccionando el texto por palabras  y  se crea  el diccionario que almacenara la frecuencia  con  la  que  aparece  cada  palabra en el articulo
+</string>
+   </property>
+   <property name="backgroundVisible">
+    <bool>false</bool>
+   </property>
+   <property name="centerOnScroll">
+    <bool>false</bool>
+   </property>
+  </widget>
   <zorder>label_2</zorder>
   <zorder>inicio</zorder>
   <zorder>pushButton</zorder>
   <zorder>label</zorder>
-  <zorder>plainTextEdit_2</zorder>
-  <zorder>label_8</zorder>
   <zorder>ver</zorder>
   <zorder>logo</zorder>
-  <zorder>stopwords</zorder>
+  <zorder>contenedor</zorder>
   <zorder>algoritmo</zorder>
+  <zorder>label_9</zorder>
+  <zorder>plainTextEdit_3</zorder>
  </widget>
  <resources/>
  <connections/>
