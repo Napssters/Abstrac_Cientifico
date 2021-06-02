@@ -261,7 +261,7 @@ color: rgb(255, 255, 255);</string>
       <string>Paso 1</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_2">
+    <widget class="QPushButton" name="paso2">
      <property name="geometry">
       <rect>
        <x>70</x>
@@ -271,10 +271,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 2</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_3">
+    <widget class="QPushButton" name="paso3">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -284,10 +284,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 3</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_4">
+    <widget class="QPushButton" name="paso5">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -297,10 +297,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 5</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_5">
+    <widget class="QPushButton" name="paso4">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -310,10 +310,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 4</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_6">
+    <widget class="QPushButton" name="paso6">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -323,10 +323,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 6</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_7">
+    <widget class="QPushButton" name="paso7">
      <property name="geometry">
       <rect>
        <x>350</x>
@@ -336,10 +336,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 7</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_8">
+    <widget class="QPushButton" name="paso8">
      <property name="geometry">
       <rect>
        <x>360</x>
@@ -349,10 +349,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 8</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_9">
+    <widget class="QPushButton" name="paso9">
      <property name="geometry">
       <rect>
        <x>440</x>
@@ -362,10 +362,10 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 9</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="paso1_10">
+    <widget class="QPushButton" name="paso10">
      <property name="geometry">
       <rect>
        <x>450</x>
@@ -375,7 +375,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Paso 1</string>
+      <string>Paso 10</string>
      </property>
     </widget>
    </widget>
