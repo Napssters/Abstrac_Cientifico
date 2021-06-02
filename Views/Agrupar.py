@@ -11,10 +11,13 @@ class AgruparView(QtWidgets.QDialog):
         self.inicio = self.findChild(QtWidgets.QPushButton, 'inicio')
         self.ver = self.findChild(QtWidgets.QPushButton, 'ver')
         self.contenedor = self.findChild(QtWidgets.QTextEdit, 'contenedor')
+        self.algoritmo = self.findChild(QtWidgets.QPushButton, 'algoritmo')
+        self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getAgrupar)
         self.controller = Ctd.Controlador()
         self._isClose = False
+        self.menu = False
 
     def getAgrupar(self):
         stops = "\""
@@ -22,6 +25,10 @@ class AgruparView(QtWidgets.QDialog):
         stops += "\""
         self.contenedor.setText(stops)
 
+    def MenuAlgoritmo(self):
+        self.menu = True
+        self.setClose()
+        return self.menu
 
     def setClose(self):
         self.contenedor.setText("")

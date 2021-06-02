@@ -108,7 +108,7 @@ color: rgb(255, 255, 255);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>320</x>
+     <x>330</x>
      <y>60</y>
      <width>131</width>
      <height>41</height>
@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Stop Words</string>
+    <string>Abstract</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">

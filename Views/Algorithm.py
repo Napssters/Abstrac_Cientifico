@@ -9,7 +9,7 @@ from Views import StopWords as Sw
 from Views import SumaFrecuencia as Sf
 from Views import TablaFrecuencia as Tf
 from Views import Tokenizar as Tn
-from Views import TokenizarSenteces as Ts
+from Views import TokenizarSentences as Ts
 import sys
 
 
@@ -52,79 +52,108 @@ class AlgoritmoView(QtWidgets.QDialog):
         self._isClose = False
 
     def Paso1(self):
-        self.hide()
         self.SwView._isClose = False
+        self.SwView.menu = False
         self.SwView.exec_()
         if(self.SwView.isClose() == True):
-            self.setClose()
+            if(self.SwView.menu == True):
+                self.show()
+            if(self.SwView.menu == False):
+                self.setClose()
 
     def Paso2(self):
-        self.hide()
         self.TnView._isClose = False
+        self.TnView.menu = False
         self.TnView.exec_()
         if(self.TnView.isClose() == True):
-            self.setClose()
+            if(self.TnView.menu == True):
+                self.show()
+            if(self.TnView.menu == False):
+                self.setClose()
 
     def Paso3(self):
-        self.hide()
         self.TfView._isClose = False
+        self.TfView.menu = False
         self.TfView.exec_()
         if(self.TfView.isClose() == True):
-            self.setClose()
+            if(self.TfView.menu == True):
+                self.show()
+            if(self.TfView.menu == False):
+                self.setClose()
 
     def Paso4(self):
-        self.hide()
         self.TsView._isClose = False
+        self.TsView.menu = False
         self.TsView.exec_()
         if(self.TsView.isClose() == True):
-            self.setClose()
+            if(self.TsView.menu == True):
+                self.show()
+            if(self.TsView.menu == False):
+                self.setClose()
 
     def Paso5(self):
-        self.hide()
         self.PoView._isClose = False
+        self.PoView.menu = False
         self.PoView.exec_()
         if(self.PoView.isClose() == True):
-            self.setClose()
+            if(self.PoView.menu == True):
+                self.show()
+            if(self.PoView.menu == False):
+                self.setClose()
 
     def Paso6(self):
-        self.hide()
         self.SfView._isClose = False
+        self.SfView.menu = False
         self.SfView.exec_()
         if(self.SfView.isClose() == True):
-            self.setClose()
+            if(self.SfView.menu == True):
+                self.show()
+            if(self.SfView.menu == False):
+                self.setClose()
 
     def Paso7(self):
-        self.hide()
         self.PmView._isClose = False
+        self.PmView.menu = False
         self.PmView.exec_()
         if(self.PmView.isClose() == True):
-            self.setClose()
+            if(self.PmView.menu == True):
+                self.show()
+            if(self.PmView.menu == False):
+                self.setClose()
 
     def Paso8(self):
-        self.hide()
         self.AgView._isClose = False
+        self.AgView.menu = False
         self.AgView.exec_()
         if(self.AgView.isClose() == True):
-            self.setClose()
+            if(self.AgView.menu == True):
+                self.show()
+            if(self.AgView.menu == False):
+                self.setClose()
 
     def Paso9(self):
-        self.hide()
         self.SoView._isClose = False
+        self.SoView.menu = False
         self.SoView.exec_()
         if(self.SoView.isClose() == True):
-            self.setClose()
+            if(self.SoView.menu == True):
+                self.show()
+            if(self.SoView.menu == False):
+                self.setClose()
 
     def Paso10(self):
-        self.hide()
         self.RmView._isClose = False
+        self.RmView.menu = False
         self.RmView.exec_()
         if(self.RmView.isClose() == True):
-            self.setClose()
+            if(self.RmView.menu == True):
+                self.show()
+            if(self.RmView.menu == False):
+                self.setClose()
 
     def setClose(self):
         self._isClose = True
         self.isClose()
 
     def isClose(self):
-        self.hide()
         return self._isClose
