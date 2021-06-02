@@ -10,6 +10,7 @@ from Views import SumaFrecuencia as Sf
 from Views import TablaFrecuencia as Tf
 from Views import Tokenizar as Tn
 from Views import TokenizarSentences as Ts
+from Controller import Controlador as Ctd
 import sys
 
 

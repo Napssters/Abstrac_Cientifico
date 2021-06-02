@@ -16,11 +16,21 @@ class SummaryModel():
     def __init__(self):
         super(SummaryModel, self).__init__()
         self.trl = google_translator()
+        self.paso2 = ""
+        self.paso3 = ""
+        self.paso4 = ""
+        self.paso5 = ""
+        self.paso6 = ""
+        self.paso7 = ""
+        self.paso8 = ""
+        self.paso9 = ""
+        self.paso10 = ""
 
     def tokenize(self, text):
         tokenz = text.split()
+        self.paso2 = tokenz
         return tokenz
-    
+
     def StopWords(self):
         words = set(stopwords.words("english"))
         return words
@@ -47,9 +57,10 @@ class SummaryModel():
                 freqTable[word] += 1
             else:
                 freqTable[word] = 1
-
+        self.paso3 = freqTable
         sentences = sent_tokenize(text)
         sentenceValue = dict()
+        self.paso4 = sentences
         for sentence in sentences:
             for word, freq in freqTable.items():
                 if word in sentence.lower():
@@ -59,15 +70,18 @@ class SummaryModel():
                             sentenceValue[sentence] = freq
 
         sumValues = 0
+        self.paso5 = sentenceValue
         for sentence in sentenceValue:
             sumValues += sentenceValue[sentence]
-
+        self.paso6 = sumValues
         average = int(sumValues/ len(sentenceValue))
         summary = ''
+        self.paso7 = average
         for sentence in sentences:
             if (sentence in sentenceValue) and (sentenceValue[sentence] > (1.2 * average)):
                 summary += " " + sentence
-        return self.getReSummary(summary) 
+                self.paso8 += "\n" + sentence
+        return self.getReSummary(summary)
 
 
     def getReSummary(self, page_content):
@@ -78,7 +92,7 @@ class SummaryModel():
 
         formatted_article_text = re.sub('[^a-zA-Z]', ' ', article_text )
         sentence_list = nltk.sent_tokenize(article_text)
-        
+
         stopwords = nltk.corpus.stopwords.words('english')
         word_frequencies = {}
         for word in nltk.word_tokenize(formatted_article_text):
@@ -105,9 +119,10 @@ class SummaryModel():
 
 
         summary_sentences = heapq.nlargest(3, sentence_scores, key=sentence_scores.get)
-
+        self.paso9 = summary_sentences
         summary = ' '.join(summary_sentences)
         summary = self.trl.translate(summary, lang_tgt='es')
+        self.paso10 = summary
         return summary
 
     def TradEn(self, text):
