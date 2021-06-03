@@ -1,6 +1,5 @@
 #! usr/bin/env python
 from PyQt5 import QtWidgets, uic
-from Controller import Controlador as Ctd
 import sys
 
 
@@ -15,14 +14,12 @@ class PromedioView(QtWidgets.QDialog):
         self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getPromedio)
-        self.controller = Ctd.Controlador()
+        self.step = ""
         self._isClose = False
         self.menu = False
 
     def getPromedio(self):
-        stops = "\""
-        stops += '"\t"'.join(self.controller.getStopWord())
-        stops += "\""
+        stops = str(self.step)
         self.contenedor.setText(stops)
 
     def MenuAlgoritmo(self):

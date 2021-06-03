@@ -50,7 +50,14 @@ class AlgoritmoView(QtWidgets.QDialog):
         self.TfView = Tf.TablaFrecuenciaView()
         self.TnView = Tn.TokenizarView()
         self.TsView = Ts.TokenizarSentencesView()
+        self.Controller = Ctd.Controlador()
+        self.Steps = []
         self._isClose = False
+
+    def DoDocument(self):
+        pdf = 'Complements/pdfrd.pdf'
+        self.Controller.DoSummary(pdf)
+        self.Steps = self.Controller.getSteps()
 
     def Paso1(self):
         self.SwView._isClose = False
@@ -65,6 +72,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso2(self):
         self.TnView._isClose = False
         self.TnView.menu = False
+        self.TnView.step = self.Steps[0]
         self.TnView.exec_()
         if(self.TnView.isClose() == True):
             if(self.TnView.menu == True):
@@ -75,6 +83,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso3(self):
         self.TfView._isClose = False
         self.TfView.menu = False
+        self.TfView.step = self.Steps[1]
         self.TfView.exec_()
         if(self.TfView.isClose() == True):
             if(self.TfView.menu == True):
@@ -85,6 +94,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso4(self):
         self.TsView._isClose = False
         self.TsView.menu = False
+        self.TsView.step = self.Steps[2]
         self.TsView.exec_()
         if(self.TsView.isClose() == True):
             if(self.TsView.menu == True):
@@ -95,6 +105,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso5(self):
         self.PoView._isClose = False
         self.PoView.menu = False
+        self.PoView.step = self.Steps[3]
         self.PoView.exec_()
         if(self.PoView.isClose() == True):
             if(self.PoView.menu == True):
@@ -105,6 +116,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso6(self):
         self.SfView._isClose = False
         self.SfView.menu = False
+        self.SfView.step = self.Steps[4]
         self.SfView.exec_()
         if(self.SfView.isClose() == True):
             if(self.SfView.menu == True):
@@ -115,6 +127,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso7(self):
         self.PmView._isClose = False
         self.PmView.menu = False
+        self.PmView.step = self.Steps[5]
         self.PmView.exec_()
         if(self.PmView.isClose() == True):
             if(self.PmView.menu == True):
@@ -125,6 +138,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso8(self):
         self.AgView._isClose = False
         self.AgView.menu = False
+        self.AgView.step = self.Steps[6]
         self.AgView.exec_()
         if(self.AgView.isClose() == True):
             if(self.AgView.menu == True):
@@ -135,6 +149,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso9(self):
         self.SoView._isClose = False
         self.SoView.menu = False
+        self.SoView.step = self.Steps[7]
         self.SoView.exec_()
         if(self.SoView.isClose() == True):
             if(self.SoView.menu == True):
@@ -145,6 +160,7 @@ class AlgoritmoView(QtWidgets.QDialog):
     def Paso10(self):
         self.RmView._isClose = False
         self.RmView.menu = False
+        self.RmView.step = self.Steps[8]
         self.RmView.exec_()
         if(self.RmView.isClose() == True):
             if(self.RmView.menu == True):

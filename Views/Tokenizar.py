@@ -15,13 +15,13 @@ class TokenizarView(QtWidgets.QDialog):
         self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getTokenizar)
-        self.controller = Ctd.Controlador()
+        self.step = ""
         self._isClose = False
         self.menu = False
 
     def getTokenizar(self):
         stops = "\""
-        stops += '"\t"'.join(self.controller.getStopWord())
+        stops += '"\t"'.join(self.step)
         stops += "\""
         self.contenedor.setText(stops)
 
@@ -31,7 +31,7 @@ class TokenizarView(QtWidgets.QDialog):
         self.menu = True
         self.isClose()
         return self.menu
-        
+
     def setClose(self):
         self.contenedor.setText("")
         self._isClose = True

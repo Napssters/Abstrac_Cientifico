@@ -1,6 +1,5 @@
 #! usr/bin/env python
 from PyQt5 import QtWidgets, uic
-from Controller import Controlador as Ctd
 import sys
 
 
@@ -15,13 +14,13 @@ class AgruparView(QtWidgets.QDialog):
         self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getAgrupar)
-        self.controller = Ctd.Controlador()
         self._isClose = False
         self.menu = False
+        self.step = ""
 
     def getAgrupar(self):
         stops = "\""
-        stops += '"\t"'.join(self.controller.getStopWord())
+        stops += '"\t"' + self.step
         stops += "\""
         self.contenedor.setText(stops)
 

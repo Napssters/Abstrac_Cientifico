@@ -74,7 +74,7 @@ class SummaryModel():
         for sentence in sentenceValue:
             sumValues += sentenceValue[sentence]
         self.paso6 = sumValues
-        average = int(sumValues/ len(sentenceValue))
+        average = int(sumValues/len(sentenceValue))
         summary = ''
         self.paso7 = average
         for sentence in sentences:

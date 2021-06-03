@@ -1,6 +1,5 @@
 #! usr/bin/env python
 from PyQt5 import QtWidgets, uic
-from Controller import Controlador as Ctd
 import sys
 
 
@@ -15,13 +14,13 @@ class PesosOracionesView(QtWidgets.QDialog):
         self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getPesosOraciones)
-        self.controller = Ctd.Controlador()
+        self.step = ""
         self._isClose = False
         self.menu = False
 
     def getPesosOraciones(self):
         stops = "\""
-        stops += '"\t"'.join(self.controller.getStopWord())
+        stops += '"\t"'.join(self.step)
         stops += "\""
         self.contenedor.setText(stops)
 
@@ -31,7 +30,7 @@ class PesosOracionesView(QtWidgets.QDialog):
         self.menu = True
         self.isClose()
         return self.menu
-        
+
     def setClose(self):
         self.contenedor.setText("")
         self._isClose = True

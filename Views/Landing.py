@@ -25,6 +25,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def StartAlgorithm(self):
         self.hide()
+        self.AtView.DoDocument()
         self.AtView._isClose = False
         self.AtView.exec_()
         if(self.AtView.isClose() == True):

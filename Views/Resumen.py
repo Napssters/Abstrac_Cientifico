@@ -15,13 +15,13 @@ class ResumenView(QtWidgets.QDialog):
         self.algoritmo.clicked.connect(self.MenuAlgoritmo)
         self.inicio.clicked.connect(self.setClose)
         self.ver.clicked.connect(self.getResumen)
-        self.controller = Ctd.Controlador()
+        self.step = ""
         self._isClose = False
         self.menu = False
 
     def getResumen(self):
         stops = "\""
-        stops += '"\t"'.join(self.controller.getStopWord())
+        stops += '"\t"' + self.step
         stops += "\""
         self.contenedor.setText(stops)
 
@@ -31,7 +31,7 @@ class ResumenView(QtWidgets.QDialog):
         self.menu = True
         self.isClose()
         return self.menu
-        
+
     def setClose(self):
         self.contenedor.setText("")
         self._isClose = True
