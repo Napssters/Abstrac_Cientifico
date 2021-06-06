@@ -1,6 +1,8 @@
 #! usr/bin/env python
 from Views import Landing as Ld
 
+
+
 class Main():
     def __init__(self):
         self.LdView = Ld
