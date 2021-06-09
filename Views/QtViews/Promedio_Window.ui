@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>330</x>
      <y>60</y>
-     <width>101</width>
+     <width>121</width>
      <height>41</height>
     </rect>
    </property>
@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Promedio</string>
+    <string>7 Promedio</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">

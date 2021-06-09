@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>320</x>
      <y>60</y>
-     <width>131</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Stop Words</string>
+    <string>1 Stop Words</string>
    </property>
   </widget>
   <widget class="QPlainTextEdit" name="plainTextEdit_2">

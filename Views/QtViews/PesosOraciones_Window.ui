@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Pesos de Oraciones</string>
+    <string>5 Pesos de Oraciones</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">

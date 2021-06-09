@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>280</x>
      <y>70</y>
-     <width>211</width>
+     <width>221</width>
      <height>41</height>
     </rect>
    </property>
@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Sorteo de Oraciones</string>
+    <string>9 Sorteo de Oraciones</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">

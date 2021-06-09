@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>300</x>
      <y>70</y>
-     <width>191</width>
+     <width>201</width>
      <height>41</height>
     </rect>
    </property>
@@ -127,7 +127,7 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">font: 75 18pt &quot;Sylfaen&quot;;</string>
    </property>
    <property name="text">
-    <string>Suma Frecuencias</string>
+    <string>6 Suma Frecuencias</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ver">
