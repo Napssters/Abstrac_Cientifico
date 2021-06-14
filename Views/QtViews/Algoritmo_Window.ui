@@ -80,7 +80,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-511</y>
+      <y>0</y>
       <width>750</width>
       <height>1000</height>
      </rect>
@@ -159,7 +159,7 @@ p, li { white-space: pre-wrap; }
      <property name="plainText">
       <string>Para la construcción del resumen se aplican algoritmos de PNl (Procesamiento de lenguaje natural) a fin de lograr un resumen adecuado y coherente. 
 
-EL algoritmo a usar, es un algoritmo muy sencillo que se basa en descomponer el texto en frases, oraciones y palabras, entregando a cada uno un peso y una ponderación, los cuales están dados por la cantidad de veces que se repite cada palabra, frase u oración.</string>
+El algoritmo a usar, es un algoritmo muy sencillo que se basa en descomponer el texto en frases, oraciones y palabras, entregando a cada uno un peso y una ponderación, los cuales están dados por la cantidad de veces que se repite cada palabra, frase u oración.</string>
      </property>
      <property name="backgroundVisible">
       <bool>false</bool>
@@ -478,7 +478,7 @@ p, li { white-space: pre-wrap; }
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Seleccione un engranaje, segun el numero del paso que queira ver.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Seleccione un engranaje, segun el numero del paso que quiera ver.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <zorder>label_8</zorder>
