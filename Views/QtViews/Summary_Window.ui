@@ -31,9 +31,9 @@
   <widget class="QTextEdit" name="summary">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>150</y>
-     <width>601</width>
+     <x>30</x>
+     <y>110</y>
+     <width>341</width>
      <height>251</height>
     </rect>
    </property>
@@ -60,8 +60,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="generar">
    <property name="geometry">
     <rect>
-     <x>132</x>
-     <y>420</y>
+     <x>310</x>
+     <y>380</y>
      <width>123</width>
      <height>31</height>
     </rect>
@@ -100,8 +100,8 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="exportar">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>420</y>
+     <x>160</x>
+     <y>380</y>
      <width>123</width>
      <height>31</height>
     </rect>
@@ -184,7 +184,7 @@ color: rgb(255, 255, 255);</string>
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>70</y>
+     <y>60</y>
      <width>251</width>
      <height>41</height>
     </rect>
@@ -221,8 +221,8 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="exportaren">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>420</y>
+     <x>460</x>
+     <y>380</y>
      <width>123</width>
      <height>31</height>
     </rect>
@@ -284,6 +284,35 @@ color: rgb(255, 255, 255);</string>
      <width>125</width>
      <height>125</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="summary2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>110</y>
+     <width>341</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sylfaen</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sylfaen'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

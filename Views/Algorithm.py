@@ -173,4 +173,5 @@ class AlgoritmoView(QtWidgets.QDialog):
         self.isClose()
 
     def isClose(self):
+        self.hide()
         return self._isClose

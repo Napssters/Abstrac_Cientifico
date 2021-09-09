@@ -7,9 +7,12 @@ class Reader():
         self.numpages = 0
 
     def getPdf(self, file):
-        pdf = open(file, "rb")
-        reader = PyPDF2.PdfFileReader(pdf)
-        self.numpages = reader.getNumPages()
+        try:
+            pdf = open(file, "rb")
+            reader = PyPDF2.PdfFileReader(pdf)
+            self.numpages = reader.getNumPages()
+        except:
+            print("Error de lectura de PDF")
         return reader
     
     def getNumpage(self):

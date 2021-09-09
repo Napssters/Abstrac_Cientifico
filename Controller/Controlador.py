@@ -3,13 +3,19 @@ from Model import SummaryModel as Sm
 
 class Controlador():
     def __init__(self):
-        self.Reader = Rd.Reader()
+        self.interSummary = ""
         self.Summary = Sm.SummaryModel()
 
+    def getInterSummary(self):
+        return self.interSummary
+
     def DoSummary(self, file):
-        pdf = self.Reader.getPdf(file)
-        numpages = self.Reader.getNumpage()
-        return self.Summary.getSummary(pdf, numpages)
+        Reader = Rd.Reader()
+        pdf = Reader.getPdf(file)
+        numpages = Reader.getNumpage()
+        summary = self.Summary.getSummary(file, numpages)
+        self.interSummary = self.Summary.getInterSummary()
+        return summary
 
     def DoSummaryEn(self, file):
         return self.Summary.TradEn(file)
